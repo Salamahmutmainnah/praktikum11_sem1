@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs Dollar</title>
+
+    <script>
+        function hitungNilaiDollar() {
+            var uangRupiah = document.getElementById("uangRupiah").value;
+            var kursDollar = 14650;
+            var nilaiDollar = uangRupiah / kursDollar;
+            document.getElementById("hasil").innerHTML = "Nilai dalam dollar: $" + nilaiDollar.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Konversi Rupiah ke Dollar</h1>
+    
+    <label for="uangRupiah">Jumlah uang dalam Rupiah: </label>
+    <input type="text" id="uangRupiah" placeholder="Masukkan jumlah uang">
+    
+    <button onclick="hitungNilaiDollar()"> Hitung </button>
+    
+    <p id="hasil"></p>
+    
+
+</body>
+</html>
